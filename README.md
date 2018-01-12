@@ -28,7 +28,7 @@ The higher the bid, the higher percentage for the upcoming vote batch.
 
 The bot operator can set any vote weight for the batch, which will affect the number of daily votes to bid on. Therefore, each day per batch has:
 
-Votes	Percentage	       Timeframe	               Blocks
+Votes	Percentage	       Timeframe	              Blocks
 10	100 %	           every 2.4 hours	        2,880
 20	50 %	           every 1.2 hours	        1,440
 40	25 %	           every 36 minutes	        720
@@ -61,7 +61,7 @@ I've tested it on various versions of ruby. The oldest one I got it to work was:
 
 
 
-      <b>First, clone this git and install the dependencies:</b>
+      #First, clone this git and install the dependencies:
 
 
 
@@ -71,13 +71,13 @@ $ bundle install
 
 
 
-                               <b>Configure</b>
+                             #Configure
 
 
 
 
-       Edit the config.yml file.
-<b>
+       ##Edit the config.yml file.
+       
 :upvotebaby:
   :block_mode: irreversible
   :account_name: <voting account name here>
@@ -97,7 +97,9 @@ $ bundle install
   :chain: steem
   :url: https://steemd.steemit.com
       
-      </b>
+     
+     
+     
 Edit the support/confirm.md template, used to reply to the post when voting.
 
 This ${content_type} has received a ${vote_weight_percent} % ${vote_type} from @${account_name} thanks to @${from}.

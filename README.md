@@ -6,9 +6,16 @@ ________________________________________________________________________________
 
 Bot can now accept bids from one account and vote from another. This is handy if delegation is not available for your particular configuration (e.g. Golos). Note, if you can use delegation, you should because voting/commenting is done in the same transaction, which is less prone to complications.
 
-There's now better support for urls in memos that end with things like #comments and/or /. Some people paste urls without looking for extras or they get urls from other platforms running Apache, which automatically adds trailing slashes.
+
+
+
+There's now better support for urls in memos that end with things like #comments and/or /. Some people paste urls without looking for extras or they get urls from other platforms running Apache, which automatically adds trailing slashes
+
+.
 
 You can now configure BOT to accept both core (STEEM) and debt (SBD) currencies. They are not accepted 1:1. BOT checks the internal market to find the correct ratio to process bids.
+
+
 
 
 
@@ -21,13 +28,16 @@ The higher the bid, the higher percentage for the upcoming vote batch.
 
 The bot operator can set any vote weight for the batch, which will affect the number of daily votes to bid on. Therefore, each day per batch has:
 
-Votes	Percentage	Timeframe	       Blocks
-10	100 %	     every 2.4 hours	        2,880
-20	50 %	     every 1.2 hours	        1,440
-40	25 %	     every 36 minutes	        720
+Votes	Percentage	       Timeframe	               Blocks
+10	100 %	           every 2.4 hours	        2,880
+20	50 %	           every 1.2 hours	        1,440
+40	25 %	           every 36 minutes	        720
 80	12.5 %	     every 18 minutes	        360
 160	6.25 %	     every 9 minutes	        180
 320	3.13 %	     every 270 seconds	        90
+
+
+
 Example A
 
 If you set the bot to vote at 100.00%, bids open every 2.4 hours. Alice and Bob both bid for in the same voting batch. If Alice bids 4 SBD and Bob bids 2 SBD, Alice will get a 66.66% upvote and Bob will get a 33.33% upvote.
@@ -58,13 +68,16 @@ I've tested it on various versions of ruby. The oldest one I got it to work was:
 $ git clone  
 $ cd UpVoteBaby
 $ bundle install
+
+
+
                                <b>Configure</b>
 
 
 
 
-Edit the config.yml file.
-
+       Edit the config.yml file.
+<b>
 :upvotebaby:
   :block_mode: irreversible
   :account_name: <voting account name here>
@@ -83,6 +96,8 @@ Edit the config.yml file.
 :chain_options:
   :chain: steem
   :url: https://steemd.steemit.com
+      
+      </b>
 Edit the support/confirm.md template, used to reply to the post when voting.
 
 This ${content_type} has received a ${vote_weight_percent} % ${vote_type} from @${account_name} thanks to @${from}.

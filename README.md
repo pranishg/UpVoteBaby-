@@ -66,8 +66,11 @@ I've tested it on various versions of ruby. The oldest one I got it to work was:
 
 
 $ git clone  
+
 $ cd UpVoteBaby
+
 $ bundle install
+
 
 
 
@@ -79,23 +82,43 @@ $ bundle install
        ##Edit the config.yml file.
        
 :upvotebaby:
+
   :block_mode: irreversible
+  
   :account_name: <voting account name here>
+      
   :posting_wif: <posting wif here>
+      
   :active_wif: <active wif here>
+      
   :max_age: 7200
+  
   :batch_vote_weight: 100.00 %
+  
   :min_effective_weight: 0.25 %
+  
   :reserve_vote_weight: 0.00 %
+  
   :minimum_bid: 2.000 SBD
+  
   :blacklist: mikethemug
+  
   :no_bounce: bittrex poloniex openledger
+  
   :no_comment: bittrex poloniex openledger
+  
   :no_comment_fee: 0.00 %
+  
   :auto_bounce_on_lockout: false
+  
+  
 :chain_options:
+
   :chain: steem
+  
   :url: https://steemd.steemit.com
+  
+  
       
      
      

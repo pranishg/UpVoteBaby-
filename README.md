@@ -132,7 +132,7 @@ Then run it:
 $ rake run
 Bot will now do it's thing. 
 
-
+________________________________________________________________________________________________________________________________________
 
 If you face any problems while installing  ping me @upvote on DISCORD   
 
